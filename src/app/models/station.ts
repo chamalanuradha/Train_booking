@@ -4,7 +4,7 @@ export interface IStation {
     "stationCode":  string
 }
 
-export interface ResponseModel{
+export interface IStation{
     message: string;
     result: boolean;
     data :any
