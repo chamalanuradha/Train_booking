@@ -12,7 +12,7 @@
                                         <label class="form-label" for="form3Example1c">From Station</label>
                                         <select name="fromStationId" id="" class="form-select">
                                             <option value="">From Station</option>
-                                           
+                                            <option  *ngFor="let station of stationList" [value]="station.stationID">{{station.stationName}}</option>
                                         </select>
                                     </div>
                                     <div class="col-6">
