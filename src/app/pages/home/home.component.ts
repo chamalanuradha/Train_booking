@@ -25,6 +25,7 @@ stationList : IStation[] = []
   loadStation(){
     this.stationsrv.getAllStation().subscribe((res:any) =>{
       this.stationList = res.data;
+      console.log(this.stationList);
     }) 
   }
 }

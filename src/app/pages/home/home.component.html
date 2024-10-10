@@ -6,7 +6,7 @@
                     <p class="text-center h1 fw-bold mb-2 mx-1 mx-md-4 mt-1">Book Ticket</p>
                     <div class="row justify-content-center">
                         <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1"> 
-                            <form class="mx-1 mx-md-4 pt-5"> 
+                            <form class="mx-1 mx-md-4 pt-5">
                                 <div class="row">
                                     <div class="col-6">
                                         <label class="form-label" for="form3Example1c">From Station</label>
@@ -19,6 +19,7 @@
                                         <label class="form-label" for="form3Example1c">To Station</label>
                                         <select name="toStationId" id="" class="form-select">
                                             <option value="">To Station</option>
+                                            <option  *ngFor="let station of stationList" [value]="station.stationID">{{station.stationName}}</option>
                                             
                                         </select>
                                     </div>
