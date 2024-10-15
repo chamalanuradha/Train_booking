@@ -7,5 +7,5 @@ export interface IStation {
 export interface IStation{
     message: string;
     result: boolean;
-    data :any
+    data :any;
 }
